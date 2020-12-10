@@ -10,18 +10,11 @@ header{
 
         .top-bar{
             height: 45px;
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-
+            @include display_flex(flex-end, center);
             .contacts{
                 width: 460px;
-                display: flex;
-                justify-content: space-around;
-                align-items: center;
-
+                @include display_flex(space-around, center);
                 list-style: none;
-
                 li{
                     i{
                         color: $icon_color;
