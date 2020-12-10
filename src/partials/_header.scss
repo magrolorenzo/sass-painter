@@ -1,0 +1,62 @@
+header{
+    height: 95px;
+    background-color: $main_dark_color;
+
+    .container{
+        width: 1200px;
+        height: 100%;
+        margin: auto;
+        padding: 0 15px;
+
+        .top-bar{
+            height: 45px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+            .contacts{
+                width: 460px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+
+                list-style: none;
+
+                li{
+                    i{
+                        color: $icon_color;
+                        margin-right: 5px;
+                        font-size: 14px;
+                    }
+                    span{
+                        color: $grey_text;
+                        font-size: 12px;
+                        cursor: pointer;
+                        &:hover{
+                            color: white;
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+
+        .navbar{
+            height: 50%;
+
+            .logo-container{
+                width: 120px;
+                padding: 8px 15px;
+
+                img{
+                    width: 100%;
+                }
+            }
+
+
+
+
+
+        }
+    }
+}
