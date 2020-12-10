@@ -23,7 +23,7 @@ header{
                     }
                     span{
                         color: $grey_text;
-                        font-size: 12px;
+                        font-size: $navbar_font_size;
                         cursor: pointer;
                         &:hover{
                             color: white;
@@ -34,15 +34,69 @@ header{
             }
         }
 
-        .navbar{
-            height: 50%;
+        .bottom-bar{
+            height: 50px;
+            @include display_flex(flex-start, center);
 
             .logo-container{
-                width: 120px;
-                padding: 8px 15px;
+                max-width: 120px;
+                height: 100%;
+                padding: 8px 15px 8px 0;
 
                 img{
-                    width: 100%;
+                    max-width: 90px;
+                }
+            }
+
+            .navbar{
+                height: 100%;
+                list-style: none;
+                @include display_flex(space-between, center);
+
+                // li navbar
+                li{
+                    height: 100%;
+                    color: white;
+                    padding: 13px 25px 15px 25px;
+                    cursor: pointer;
+                    position: relative;
+
+                    // Ul sottomenù
+                    ul{
+                        width: 220px;
+                        display: none;
+                        position: absolute;
+                        top: 100%;
+                        left: 0;
+                        list-style: none;
+                        // li sottomenù
+                        li{
+                            width: 100%;
+                            padding: 13px 20px;
+                            background-color: white;
+                            color: black;
+                            font-size: 14px;
+                            font-weight: 300;
+                            &:hover{
+                                background-color: #e6e6e6;
+                            }
+                        }
+                    }
+                    // Hover su li menu principale
+                    &:hover{
+                        color: black;
+                        background-color: white;
+                        ul{
+                            display: block;
+                        }
+                    }
+                    span{
+                        font-size: 14px;
+                    }
+                    i{
+                        font-size: 10px;
+                        color: $grey_text;
+                    }
                 }
             }
 

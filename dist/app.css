@@ -49,16 +49,76 @@ header .container .top-bar .contacts li span:hover {
   text-decoration: underline;
 }
 
-header .container .navbar {
-  height: 50%;
+header .container .bottom-bar {
+  height: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
-header .container .navbar .logo-container {
-  width: 120px;
-  padding: 8px 15px;
+header .container .bottom-bar .logo-container {
+  max-width: 120px;
+  height: 100%;
+  padding: 8px 15px 8px 0;
 }
 
-header .container .navbar .logo-container img {
+header .container .bottom-bar .logo-container img {
+  max-width: 90px;
+}
+
+header .container .bottom-bar .navbar {
+  height: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .container .bottom-bar .navbar li {
+  height: 100%;
+  color: white;
+  padding: 13px 25px 15px 25px;
+  cursor: pointer;
+  position: relative;
+}
+
+header .container .bottom-bar .navbar li ul {
+  width: 220px;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  list-style: none;
+}
+
+header .container .bottom-bar .navbar li ul li {
   width: 100%;
+  padding: 13px 20px;
+  background-color: white;
+  color: black;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+header .container .bottom-bar .navbar li ul li:hover {
+  background-color: #e6e6e6;
+}
+
+header .container .bottom-bar .navbar li:hover {
+  color: black;
+  background-color: white;
+}
+
+header .container .bottom-bar .navbar li:hover ul {
+  display: block;
+}
+
+header .container .bottom-bar .navbar li span {
+  font-size: 14px;
+}
+
+header .container .bottom-bar .navbar li i {
+  font-size: 10px;
+  color: #989898;
 }
 
