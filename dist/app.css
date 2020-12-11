@@ -131,9 +131,56 @@ main .product-download .container .img-credits span {
   color: #ddd;
 }
 main .product-download .container .download {
-  height: 100%;
   border: 1px solid red;
+  height: 100%;
   width: 500px;
+  padding: 40px 0;
+  color: white;
+}
+main .product-download .container .download h1 {
+  font-size: 30px;
+  font-weight: normal;
+}
+main .product-download .container .download h2 {
+  font-size: 24px;
+  font-weight: normal;
+  margin: 15px 0;
+}
+main .product-download .container .download ul {
+  list-style: none;
+  margin: 35px 0;
+}
+main .product-download .container .download ul li {
+  margin: 15px 0;
+}
+main .product-download .container .download ul li i {
+  font-size: 14px;
+  color: grey;
+}
+main .product-download .container .download button {
+  width: 205px;
+  height: 55px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  background-color: #666666;
+  border: none;
+  color: white;
+}
+main .product-download .container .download button .link {
+  height: 100%;
+  width: 75%;
+  text-align: left;
+  border-right: 1px solid white;
+}
+main .product-download .container .download button .download-icon {
+  height: 100%;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 26px;
 }
 main .product-download .container .buy {
   height: 100%;
