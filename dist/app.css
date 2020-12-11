@@ -13,7 +13,7 @@
 
 header {
   height: 95px;
-  background-color: #101010;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 header .container {
   padding: 0 15px;
@@ -242,7 +242,7 @@ main .product-download .container .buy .offer-info p a {
 
 footer .footer-links {
   height: 320px;
-  background-color: #ececec;
+  background-color: rgba(100, 255, 1, 0.5);
 }
 footer .footer-links .container {
   padding: 40px 10px;
@@ -262,6 +262,7 @@ footer .footer-links .container .column ul li {
   font-size: 13px;
   font-weight: 300;
   margin: 10px 0;
+  color: #121212;
 }
 footer .footer-links .container .column ul li:nth-child(1) {
   font-size: 16px;
@@ -303,7 +304,7 @@ footer .footer-links .container .column .rs-logo {
 }
 footer .copyright {
   height: 90px;
-  background-color: #1e1e1e;
+  background-color: rgba(50, 10, 255, 0.5);
 }
 footer .copyright .container {
   padding: 10px 20px;
@@ -326,10 +327,10 @@ footer .copyright .container .right-footer {
   align-items: center;
 }
 footer .copyright .container .right-footer span {
-  color: #989898;
+  color: #121212;
   font-size: 12px;
   margin: 0 10px;
 }
 footer .copyright .container .right-footer span:nth-last-child(1) {
-  color: white;
+  color: #121212;
 }

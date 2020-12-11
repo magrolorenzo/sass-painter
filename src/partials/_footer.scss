@@ -4,7 +4,8 @@ footer{
     // Parte alta footer
     .footer-links{
         height: 320px;
-        background-color: #ececec;
+        //  #ececec;
+        background-color: $footer_links_color;
 
         .container{
             padding: 40px 10px;
@@ -22,6 +23,7 @@ footer{
                         font-size: 13px;
                         font-weight: 300;
                         margin: 10px 0;
+                        color: $links-color;
                     }
                     li:nth-child(1){
                         font-size: 16px;
@@ -66,7 +68,8 @@ footer{
     // Parte bassa footer
     .copyright{
         height: 90px;
-        background-color: #1e1e1e;
+        // 1e1e1e
+        background-color: $footer_copyrights_color;
 
         .container{
             padding: 10px 20px;
@@ -87,13 +90,13 @@ footer{
                 @include display_flex(flex-end, center);
 
                 span{
-                    color: $grey_text;
+                    color: $links-color;
                     font-size: 12px;
                     margin: 0 10px;
                 }
 
                 span:nth-last-child(1){
-                    color: white;
+                    color: $links-color;
                 }
             }
 
