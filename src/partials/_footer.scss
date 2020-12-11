@@ -6,6 +6,7 @@ footer{
         margin: auto;
     }
 
+    // Parte alta footer
     .footer-links{
         height: 320px;
         background-color: #ececec;
@@ -67,12 +68,41 @@ footer{
         }
     }
 
+    // Parte bassa footer
     .copyright{
         height: 90px;
         background-color: #1e1e1e;
 
         .container{
             padding: 10px 20px;
+            @include display_flex(space-between, center);
+
+            // Left Footer
+            .left-footer{
+                height: 100%;
+                width: 30%;
+                @include display_flex(space-between, center);
+
+            }
+
+            // Right Footer
+            .right-footer{
+                height: 100%;
+                width: 70%;
+                @include display_flex(flex-end, center);
+
+                span{
+                    color: $grey_text;
+                    font-size: 12px;
+                    margin: 0 10px;
+                }
+
+                span:nth-last-child(1){
+                    color: white;
+                }
+            }
+
+
         }
     }
 
