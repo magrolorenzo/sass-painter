@@ -122,3 +122,93 @@ header .container .bottom-bar .navbar li i {
   color: #989898;
 }
 
+footer .container {
+  height: 100%;
+  width: 1190px;
+  margin: auto;
+}
+
+footer .footer-links {
+  height: 320px;
+  background-color: #ececec;
+}
+
+footer .footer-links .container {
+  padding: 40px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .footer-links .container .column {
+  height: 100%;
+  width: 25%;
+  padding: 0 15px;
+}
+
+footer .footer-links .container .column ul {
+  list-style: none;
+}
+
+footer .footer-links .container .column ul li {
+  font-size: 13px;
+  font-weight: 300;
+  margin: 10px 0;
+}
+
+footer .footer-links .container .column ul li:nth-child(1) {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+footer .footer-links .container .column .social-icons {
+  width: 90%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .footer-links .container .column .social-icons .logo-container {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  color: white;
+}
+
+footer .footer-links .container .column .ig-logo {
+  background-color: #e4405f;
+}
+
+footer .footer-links .container .column .fb-logo {
+  background-color: #3b5998;
+}
+
+footer .footer-links .container .column .tw-logo {
+  background-color: #1da1f2;
+}
+
+footer .footer-links .container .column .yt-logo {
+  background-color: #cd201f;
+}
+
+footer .footer-links .container .column .pi-logo {
+  background-color: #bd081c;
+}
+
+footer .footer-links .container .column .rs-logo {
+  background-color: #ff8d00;
+}
+
+footer .copyright {
+  height: 90px;
+  background-color: #1e1e1e;
+}
+
+footer .copyright .container {
+  padding: 10px 20px;
+}
+
