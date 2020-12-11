@@ -6,13 +6,13 @@ main{
         background-position: center;
 
         .container{
+            padding-top: 20px;
             @include display_flex(space-between, center);
 
             .img-credits{
-                width: 300px;
+                width: 290px;
                 height: 100%;
                 padding-bottom: 20px;
-                border: 1px solid red;
                 @include display_flex(center, flex-end);
 
                 span{
@@ -22,19 +22,18 @@ main{
             }
 
             .download{
-                border: 1px solid red;
                 height: 100%;
-                width: 500px;
-                padding: 40px 0;
+                width: 510px;
+                padding: 30px 0;
                 color: white;
 
                 h1{
-                    font-size: 30px;
+                    font-size: 28px;
                     font-weight: normal;
                 }
 
                 h2{
-                    font-size: 24px;
+                    font-size: 22px;
                     font-weight: normal;
                     margin: 15px 0;
                 }
@@ -79,10 +78,62 @@ main{
                 }
 
             }
+
             .buy{
                 height: 100%;
-                border: 1px solid red;
                 width: 400px;
+                background-color: rgba(0,0,0,0.9);
+                padding: 20px 10px 20px 20px;
+
+                .price-infos{
+                    height: 150px;
+                    @include display_flex(space-between, flex-start);
+
+                    .text-section{
+                        height: 100%;
+                        padding-top: 25px;
+                        @include display_flex_column(space-around, flex-start);
+                        .price{
+                            font-size: 24px;
+                            color: white;
+                        }
+
+                        .download-span{
+                            font-size: 14px;
+                            padding-bottom: 10px;
+                            color: grey;
+                        }
+
+                        button{
+                            width: 150px;
+                            height: 35px;
+                            color: white;
+                            font-size: 16px;
+                            background-color: #009cff;
+                            border: none;
+                        }
+                    }
+                }
+
+                .offer-info{
+                    width: 350px;
+                    height: 90px;
+                    margin-top: 30px;
+                    padding: 10px;
+                    padding-left: 15px;
+                    background-color: #f6f6f6;
+                    @include display_flex_column(space-around, flex-start);
+                    h4{
+                        font-size: 18px;
+                    }
+                    p{
+                        font-size: 13px;
+                        a{
+                            color:#009cff;
+                        }
+                    }
+                }
+
             }
         }
     }

@@ -113,15 +113,15 @@ main .product-download {
   background-position: center;
 }
 main .product-download .container {
+  padding-top: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 main .product-download .container .img-credits {
-  width: 300px;
+  width: 290px;
   height: 100%;
   padding-bottom: 20px;
-  border: 1px solid red;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -131,18 +131,17 @@ main .product-download .container .img-credits span {
   color: #ddd;
 }
 main .product-download .container .download {
-  border: 1px solid red;
   height: 100%;
-  width: 500px;
-  padding: 40px 0;
+  width: 510px;
+  padding: 30px 0;
   color: white;
 }
 main .product-download .container .download h1 {
-  font-size: 30px;
+  font-size: 28px;
   font-weight: normal;
 }
 main .product-download .container .download h2 {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: normal;
   margin: 15px 0;
 }
@@ -184,8 +183,61 @@ main .product-download .container .download button .download-icon {
 }
 main .product-download .container .buy {
   height: 100%;
-  border: 1px solid red;
   width: 400px;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 20px 10px 20px 20px;
+}
+main .product-download .container .buy .price-infos {
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+main .product-download .container .buy .price-infos .text-section {
+  height: 100%;
+  padding-top: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+main .product-download .container .buy .price-infos .text-section .price {
+  font-size: 24px;
+  color: white;
+}
+main .product-download .container .buy .price-infos .text-section .download-span {
+  font-size: 14px;
+  padding-bottom: 10px;
+  color: grey;
+}
+main .product-download .container .buy .price-infos .text-section button {
+  width: 150px;
+  height: 35px;
+  color: white;
+  font-size: 16px;
+  background-color: #009cff;
+  border: none;
+}
+main .product-download .container .buy .offer-info {
+  width: 350px;
+  height: 90px;
+  margin-top: 30px;
+  padding: 10px;
+  padding-left: 15px;
+  background-color: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+main .product-download .container .buy .offer-info h4 {
+  font-size: 18px;
+}
+main .product-download .container .buy .offer-info p {
+  font-size: 13px;
+}
+main .product-download .container .buy .offer-info p a {
+  color: #009cff;
 }
 
 footer .footer-links {
