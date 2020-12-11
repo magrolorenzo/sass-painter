@@ -1,0 +1,39 @@
+main{
+
+    .product-download{
+        height: 460px;
+        background-image: url("https://www.painterartist.com/static/ptr/product_content/painteressentials/7/hero-painteressentials-7.jpg");
+        background-position: center;
+
+        .container{
+            @include display_flex(space-between, center);
+
+            .img-credits{
+                width: 300px;
+                height: 100%;
+                padding-bottom: 20px;
+                border: 1px solid red;
+                @include display_flex(center, flex-end);
+
+                span{
+                    font-size: 11px;
+                    color: #ddd;
+                }
+            }
+
+            .download{
+                height: 100%;
+                border: 1px solid red;
+                width: 500px;
+
+                
+            }
+            .buy{
+                height: 100%;
+                border: 1px solid red;
+                width: 400px;
+            }
+        }
+    }
+
+}

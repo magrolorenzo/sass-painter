@@ -5,25 +5,25 @@
   font-family: "Roboto", sans-serif;
 }
 
+.container {
+  width: 1200px;
+  height: 100%;
+  margin: auto;
+}
+
 header {
   height: 95px;
   background-color: #101010;
 }
-
 header .container {
-  width: 1200px;
-  height: 100%;
-  margin: auto;
   padding: 0 15px;
 }
-
 header .container .top-bar {
   height: 45px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
-
 header .container .top-bar .contacts {
   width: 460px;
   display: flex;
@@ -31,41 +31,34 @@ header .container .top-bar .contacts {
   align-items: center;
   list-style: none;
 }
-
 header .container .top-bar .contacts li i {
   color: #009cff;
   margin-right: 5px;
   font-size: 14px;
 }
-
 header .container .top-bar .contacts li span {
   color: #989898;
   font-size: 12px;
   cursor: pointer;
 }
-
 header .container .top-bar .contacts li span:hover {
   color: white;
   text-decoration: underline;
 }
-
 header .container .bottom-bar {
   height: 50px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
-
 header .container .bottom-bar .logo-container {
   max-width: 120px;
   height: 100%;
   padding: 8px 15px 8px 0;
 }
-
 header .container .bottom-bar .logo-container img {
   max-width: 90px;
 }
-
 header .container .bottom-bar .navbar {
   height: 100%;
   list-style: none;
@@ -73,7 +66,6 @@ header .container .bottom-bar .navbar {
   justify-content: space-between;
   align-items: center;
 }
-
 header .container .bottom-bar .navbar li {
   height: 100%;
   color: white;
@@ -81,7 +73,6 @@ header .container .bottom-bar .navbar li {
   cursor: pointer;
   position: relative;
 }
-
 header .container .bottom-bar .navbar li ul {
   width: 220px;
   display: none;
@@ -90,7 +81,6 @@ header .container .bottom-bar .navbar li ul {
   left: 0;
   list-style: none;
 }
-
 header .container .bottom-bar .navbar li ul li {
   width: 100%;
   padding: 13px 20px;
@@ -99,68 +89,85 @@ header .container .bottom-bar .navbar li ul li {
   font-size: 14px;
   font-weight: 300;
 }
-
 header .container .bottom-bar .navbar li ul li:hover {
   background-color: #e6e6e6;
 }
-
 header .container .bottom-bar .navbar li:hover {
   color: black;
   background-color: white;
 }
-
 header .container .bottom-bar .navbar li:hover ul {
   display: block;
 }
-
 header .container .bottom-bar .navbar li span {
   font-size: 14px;
 }
-
 header .container .bottom-bar .navbar li i {
   font-size: 10px;
   color: #989898;
 }
 
-footer .container {
+main .product-download {
+  height: 460px;
+  background-image: url("https://www.painterartist.com/static/ptr/product_content/painteressentials/7/hero-painteressentials-7.jpg");
+  background-position: center;
+}
+main .product-download .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .product-download .container .img-credits {
+  width: 300px;
   height: 100%;
-  width: 1190px;
-  margin: auto;
+  padding-bottom: 20px;
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+main .product-download .container .img-credits span {
+  font-size: 11px;
+  color: #ddd;
+}
+main .product-download .container .download {
+  height: 100%;
+  border: 1px solid red;
+  width: 500px;
+}
+main .product-download .container .buy {
+  height: 100%;
+  border: 1px solid red;
+  width: 400px;
 }
 
 footer .footer-links {
   height: 320px;
   background-color: #ececec;
 }
-
 footer .footer-links .container {
   padding: 40px 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 footer .footer-links .container .column {
   height: 100%;
   width: 25%;
   padding: 0 15px;
 }
-
 footer .footer-links .container .column ul {
   list-style: none;
 }
-
 footer .footer-links .container .column ul li {
   font-size: 13px;
   font-weight: 300;
   margin: 10px 0;
 }
-
 footer .footer-links .container .column ul li:nth-child(1) {
   font-size: 16px;
   font-weight: 400;
 }
-
 footer .footer-links .container .column .social-icons {
   width: 90%;
   margin-top: 20px;
@@ -168,7 +175,6 @@ footer .footer-links .container .column .social-icons {
   justify-content: space-between;
   align-items: center;
 }
-
 footer .footer-links .container .column .social-icons .logo-container {
   width: 32px;
   height: 32px;
@@ -178,43 +184,34 @@ footer .footer-links .container .column .social-icons .logo-container {
   font-size: 22px;
   color: white;
 }
-
 footer .footer-links .container .column .ig-logo {
   background-color: #e4405f;
 }
-
 footer .footer-links .container .column .fb-logo {
   background-color: #3b5998;
 }
-
 footer .footer-links .container .column .tw-logo {
   background-color: #1da1f2;
 }
-
 footer .footer-links .container .column .yt-logo {
   background-color: #cd201f;
 }
-
 footer .footer-links .container .column .pi-logo {
   background-color: #bd081c;
 }
-
 footer .footer-links .container .column .rs-logo {
   background-color: #ff8d00;
 }
-
 footer .copyright {
   height: 90px;
   background-color: #1e1e1e;
 }
-
 footer .copyright .container {
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 footer .copyright .container .left-footer {
   height: 100%;
   width: 30%;
@@ -222,7 +219,6 @@ footer .copyright .container .left-footer {
   justify-content: space-between;
   align-items: center;
 }
-
 footer .copyright .container .right-footer {
   height: 100%;
   width: 70%;
@@ -230,14 +226,11 @@ footer .copyright .container .right-footer {
   justify-content: flex-end;
   align-items: center;
 }
-
 footer .copyright .container .right-footer span {
   color: #989898;
   font-size: 12px;
   margin: 0 10px;
 }
-
 footer .copyright .container .right-footer span:nth-last-child(1) {
   color: white;
 }
-
